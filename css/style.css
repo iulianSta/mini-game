@@ -4,15 +4,31 @@
 }
 /* Body style */
 body {
+  width: 90vw;
+  height: 90vh;
   background-image: url(../img/pexels-photo-1227497.jpeg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+
   position: relative;
 }
 /* Emoji style */
 .emoji {
   position: absolute;
-  font-size: 5rem;
+  font-size: 7rem;
   z-index: 1;
+}
+/* H1 style */
+h1 {
+  font-size: 3rem;
+  color: rgb(245, 48, 48);
+  margin: 1rem 0 1rem 1rem;
+}
+/* H2 style */
+h2 {
+  font-size: 3rem;
+  color: green;
+  position: relative;
+  top: 81vh;
+  left: 87vw;
 }
