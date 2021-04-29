@@ -33,7 +33,13 @@ function move(e) {
   if (e.code == "KeyD") goRight();
   if (e.code == "KeyA") goLeft();
   if (e.code == "KeyS") goDown();
+  if (
+    window.innerHeight / 2 <= vStandPoint &&
+    window.innerWidth - 120 <= hStandPoint
+  )
+    document.querySelector("body").textContent = "YOU WON!";
 }
+
 const emoji = document.querySelector(".emoji");
 const body = document.querySelector("body");
 body.addEventListener("keypress", move);
