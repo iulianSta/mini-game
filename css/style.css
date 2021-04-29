@@ -1,0 +1,18 @@
+/* All elements style */
+* {
+  box-sizing: border-box;
+}
+/* Body style */
+body {
+  background-image: url(./bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+/* Emoji style */
+.emoji {
+  position: absolute;
+  font-size: 5rem;
+  z-index: 1;
+}
