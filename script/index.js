@@ -3,27 +3,31 @@
 let hStandPoint = 0;
 // Vertical stand point
 let vStandPoint = 0;
+const emoji = document.querySelector(".emoji");
+const body = document.querySelector("body");
+const message = document.querySelector(".message");
+
 // Go Up function
 function goUp() {
-  vStandPoint -= 5;
+  vStandPoint -= 15;
   emoji.style.top = vStandPoint + "px";
   emoji.style.transform = "rotate(-110deg)";
 }
 // Go Down function
 function goDown() {
-  vStandPoint += 5;
+  vStandPoint += 15;
   emoji.style.top = vStandPoint + "px";
   emoji.style.transform = "rotate(70deg)";
 }
 // Go Right function
 function goRight() {
-  hStandPoint += 5;
+  hStandPoint += 15;
   emoji.style.left = hStandPoint + "px";
   emoji.style.transform = "rotate(-20deg)";
 }
 // Go Left function
 function goLeft() {
-  hStandPoint -= 5;
+  hStandPoint -= 15;
   emoji.style.left = hStandPoint + "px";
   emoji.style.transform = "rotate(-190deg)";
 }
@@ -37,16 +41,7 @@ function move(e) {
     window.innerHeight / 1.2 <= vStandPoint &&
     window.innerWidth - 250 <= hStandPoint
   )
-    alert("YOU WON!");
-  //   let body = document.querySelector("body");
-  //    let text = body.textContent;
-  //    text = "YOU WON!";
-  //    text.style.fontSize = "5rem";
-  //    text.style.position = "relative";
-  //    text.style.top = "45vh";
-  //    text.style.left = "45vw";
+    message.style.display = "block";
+  message.innerHTML = "GAME OVER! </br> You won!";
 }
-
-const emoji = document.querySelector(".emoji");
-const body = document.querySelector("body");
 body.addEventListener("keypress", move);

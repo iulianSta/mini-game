@@ -32,3 +32,14 @@ h2 {
   top: 81vh;
   left: 87vw;
 }
+/* Message box style */
+.message {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
