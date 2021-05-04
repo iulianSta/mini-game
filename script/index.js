@@ -34,10 +34,17 @@ function move(e) {
   if (e.code == "KeyA") goLeft();
   if (e.code == "KeyS") goDown();
   if (
-    window.innerHeight / 2 <= vStandPoint &&
-    window.innerWidth - 120 <= hStandPoint
+    window.innerHeight / 1.2 <= vStandPoint &&
+    window.innerWidth - 250 <= hStandPoint
   )
-    document.querySelector("body").textContent = "YOU WON!";
+    alert("YOU WON!");
+  //   let body = document.querySelector("body");
+  //    let text = body.textContent;
+  //    text = "YOU WON!";
+  //    text.style.fontSize = "5rem";
+  //    text.style.position = "relative";
+  //    text.style.top = "45vh";
+  //    text.style.left = "45vw";
 }
 
 const emoji = document.querySelector(".emoji");
